@@ -1,6 +1,6 @@
 -- Problem Statement
 
--- Query the list of CITY names starting with vowels (i.e., a, e, i, o, or u) from STATION. 
+-- Query the list of CITY names ending with vowels (a, e, i, o, u) from STATION. 
 -- Your result cannot contain duplicates.
 
 -- The STATION table is described as follows:
@@ -16,5 +16,5 @@
 -- where LAT_N is the northern latitude and LONG_W is the western longitude.
 
 SELECT DISTINCT CITY 
-FROM STATION
-WHERE CITY LIKE '[AEIOU]%'
+FROM STATION 
+WHERE CITY LIKE '%[AEIOU]'

@@ -6,7 +6,7 @@
 
 -- The STATION table is described as follows:
 
--- -- Field         Type
+-- Field         Type
 ----------------------
 -- ID            NUMBER
 -- City          VARCHAR2(17)
