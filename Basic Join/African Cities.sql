@@ -1,6 +1,6 @@
 -- Problem Statement
 
--- Given the CITY and COUNTRY tables, query the sum of the populations of all cities where the CONTINENT is 'Asia'.
+-- Given the CITY and COUNTRY tables, query the names of all cities where the CONTINENT is 'Africa'.
 
 -- Note: CITY.CountryCode and COUNTRY.Code are matching key columns.
 
@@ -36,11 +36,10 @@
 -- CAPITAL              VARCHAR2 (4)
 -- CODE2                VARCHAR2 (2)
 
-
 -- Solution
 
-SELECT SUM(CITY.POPULATION) AS TOTAL_POPULATION
-FROM CITY 
-INNER JOIN COUNTRY
+SELECT CITY.NAME
+FROM CITY
+INNER JOIN COUNTRY 
 ON CITY.COUNTRYCODE = COUNTRY.CODE
-WHERE CONTINENT = "ASIA"
+WHERE CONTINENT = "AFRICA"
